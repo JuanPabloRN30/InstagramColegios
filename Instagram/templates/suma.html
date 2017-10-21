@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="{% url 'suma' %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="num1" value="">
+      <input type="text" name="num2" value="">
+      <button name="button">Sumar</button>
+    </form>
+    La suma es: {{ resultado }}
+  </body>
+</html>
