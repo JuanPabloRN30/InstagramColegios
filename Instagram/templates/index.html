@@ -8,12 +8,15 @@
 </head>
 
 <body>
-  <form class="" action="" method="post">
-    <input type="text" name="" placeholder="Nombre Completo">
-    <input type="text" name="" placeholder="Correo">
-    <input type="text" name="" placeholder="Usuario">
-    <input type="text" name="" placeholder="Contraseña">
+
+  <form class="" action="{% url 'index' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="nombre_completo" placeholder="Nombre Completo">
+    <input type="text" name="correo" placeholder="Correo">
+    <input type="text" name="usuario" placeholder="Usuario">
+    <input type="password" name="password" placeholder="Contraseña">
     <button name="button"> Registrar</button>
   </form>
+
 </body>
 </html>
