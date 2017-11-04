@@ -5,9 +5,11 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
-      <input type="username" name="" placeholder="Username">
-      <input type="password" name="" placeholder="Password">
+    <form class="" action="{% url 'login' %}" method="post">
+      {% csrf_token %}
+      <input type="username" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" name="" value="Iniciar Sesion">
     </form>
   </body>
 </html>

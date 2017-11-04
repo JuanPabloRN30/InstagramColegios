@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram card</title>
+  <link href="https://file.myfontastic.com/XLdcD3ucSfGDt29YNfZCt8/icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+</head>
+<body>
+  <a href="{% url 'logout' %}">Cerrar Sesion</a>
+  <section class='photo_container'>
+  	<section class='photo_header'>
+  		<img src="https://scontent-mia3-2.cdninstagram.com/t51.2885-19/s150x150/21577210_349591088797016_6637045393806852096_n.jpg" class='photo_user'>
+  		<h3 class='photo_username'>majovargas1</h3>
+  	</section>
+  	<section class='photo_image'>
+  		<img src='https://scontent-mia3-2.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/22159285_134256793888315_5173102011394031616_n.jpg 640w,https://scontent-mia3-2.cdninstagram.com/t51.2885-15/sh0.08/e35/p750x750/22159285_134256793888315_5173102011394031616_n.jpg 750w,https://scontent-mia3-2.cdninstagram.com/t51.2885-15/e35/22159285_134256793888315_5173102011394031616_n.jpg'>
+  	</section>
+  	<section class='photo_icons'>
+  		<i class="acm-heart-empty"></i>
+  		<i class="acm-comment"></i>
+  	</section>
+  	<h5 class='photo_likes'><span>43,294</span> Me gusta</h5>
+  	<section class='photo_comments'>
+  		<section class='photo_comment'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio in nobis.</section>
+  		<section class='photo_comment'>Lorem ipsum dolor sit amet consectetur.</section>
+  		<section class='photo_comment'>Lorem ipsum dolor sit amet</section>
+  		<section class='photo_comment'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</section>
+  	</section>
+  	<section class='photo_add_comment'>
+  		<input placeholder='Agrega un comentario...'>
+  		<i class='acm-dots'></i>
+  	</section>
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</body>
+</html>
